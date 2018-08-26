@@ -1,0 +1,39 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!Doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<br>
+<div style="text-align:center">
+  <h1>
+    Welcome to Billing!
+  </h1>
+</div>
+<h3 class="demo1">Choose option</h3>
+<div class="ui-g">
+	<div class="ui-g-1"></div>
+	<div class="ui-g-2"></div>
+  <div class="ui-g-2">
+  	<button pButton type="button" label="Bill Item" class="ui-button"  routerLink="/billing"></button>
+</div>
+  <div class="ui-g-2">
+  	<button pButton type="button" label="Add Product" class="ui-button"   routerLink="/addproduct"></button>
+  </div>
+  <div class="ui-g-2">
+  	<button pButton type="button" label="Bill History" class="ui-button"  routerLink="/billhistory"></button>
+  </div>
+</div>
+<br>
+<div class="ui-g">
+	<div class="ui-g-2"></div>
+	<div class="ui-g-8">
+<router-outlet></router-outlet>
+<div class="ui-g-2"></div>
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+.demo1
+{
+	align-self:center;
+	color: red;
+	text-align: center;
+}
+.demo
+{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	margin-top:1%;
+	margin-bottom:0%;
+}
+body  {
+    /*background-image: url("C:\Users\Ranji\Pictures\Saved Pictures\vi.jpg");*/
+    background-color: #cccccc;
+    box-shadow: 10px 10px 10px #716C6C;
+}

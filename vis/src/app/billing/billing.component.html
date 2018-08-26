@@ -1,0 +1,35 @@
+<div class="f">
+	<h1>Item List</h1>
+	<div class="ui-g">
+	<div class="ui-g-4">
+		<input type="text"  name="additem" placeholder="additem" class="addText" [value]="newItem" (input)="newItem = $event.target.value">
+		
+	</div>
+	<div class="ui-g-4">
+		<input type="number" name="additem1" placeholder="Quantity"  [value]="newItem1" (input)="newItem1 = $event.target.value">
+	</div>
+	
+	<div class="ui-g-4">
+		<button pButton type="button" label="+additem" class="ui-button" (click)="pushItem1()" (click)="pushItem()" ></button>
+	</div>
+	
+	</div>
+<div class="ui-g">
+	<div class="ui-g-4">
+	
+<ul>
+	<li *ngFor="let i of items;let ind=index">
+		{{i}}
+			 	
+	</li>
+</ul>
+</div>
+	<div class="ui-g-4">
+<ul>
+	<li *ngFor="let i1 of items1;let ind1=index1">
+		{{i1}}
+			 	<span (click)="removeItem(ind,ind1)">x</span>
+	</li>
+</ul>
+</div>
+</div>
